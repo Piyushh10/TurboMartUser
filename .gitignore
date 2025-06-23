@@ -1,0 +1,7 @@
+# Secrets
+google-services.json
+*.keystore
+*.jks
+app/keys.properties
+.env
+/local.properties
