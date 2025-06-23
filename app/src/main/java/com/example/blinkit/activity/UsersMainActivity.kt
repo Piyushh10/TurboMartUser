@@ -25,9 +25,8 @@ class UsersMainActivity : AppCompatActivity(), CartListener {
         super.onCreate(savedInstanceState)
         binding = ActivityUsersBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        getTotalItemCount()
-        onCartClicked()
         getAllProducts()
+        onCartClicked()
         onNextButtonClicked()
     }
 
@@ -38,20 +37,28 @@ class UsersMainActivity : AppCompatActivity(), CartListener {
     }
 
     private fun getAllProducts() {
-       viewModel.getAll().observe(this){
-           cartProductsList=it
-       }
+        viewModel.getAll().observe(this) { cartProductsList ->
+            this.cartProductsList = cartProductsList
+            val count = cartProductsList.sumOf { it.productCount ?: 0 }
+            if (count > 0) {
+                binding.llCart.visibility = View.VISIBLE
+                binding.tvNumberOfProductCount.text = count.toString()
+            } else {
+                binding.llCart.visibility = View.GONE
+                binding.tvNumberOfProductCount.text = "0"
+            }
+        }
     }
 
     private fun onCartClicked() {
         binding.llItemCart.setOnClickListener {
             val bsCartProductBinding =  BsCartProductsBinding.inflate(LayoutInflater.from(this))
-
             val bs = BottomSheetDialog(this)
             bs.setContentView(bsCartProductBinding.root)
 
-
-            bsCartProductBinding.tvNumberOfProductCount.text=binding.tvNumberOfProductCount.text
+            // Update the bottom sheet's cart count from the actual cart
+            val count = cartProductsList.sumOf { it.productCount ?: 0 }
+            bsCartProductBinding.tvNumberOfProductCount.text = count.toString()
 
             bsCartProductBinding.btnNext.setOnClickListener {
                 startActivity(Intent(this,OrderPlacedActivity::class.java))
@@ -65,39 +72,10 @@ class UsersMainActivity : AppCompatActivity(), CartListener {
         }
     }
 
-    private fun getTotalItemCount() {
-        viewModel.fetchTotalCartItemCount().observe(this) {
-            if (it > 0) {
-                binding.llCart.visibility = View.VISIBLE
-                binding.tvNumberOfProductCount.text = it.toString()
-            } else {
-                binding.llCart.visibility = View.GONE
-            }
-        }
-    }
-
-    override fun showCartLayout(itemCount: Int) {
-        val previousCount = binding.tvNumberOfProductCount.text.toString().toInt()
-        val updatedCount = previousCount + itemCount
-        if (updatedCount > 0) {
-            binding.llCart.visibility = View.VISIBLE
-            binding.tvNumberOfProductCount.text = updatedCount.toString()
-        } else {
-
-            binding.llCart.visibility = View.GONE
-            binding.tvNumberOfProductCount.text = "0"
-        }
-    }
-
-    override fun savingCartItemCount(itemCount: Int) {
-        viewModel.fetchTotalCartItemCount().observe(this) {
-            viewModel.savingCartItemCount(it + itemCount)
-        }
-
-    }
-
+    override fun showCartLayout(itemCount: Int) { /* No-op, handled by observer */ }
+    override fun savingCartItemCount(itemCount: Int) { /* No-op, handled by observer */ }
     override fun hideCartLayout() {
-       binding.llCart.visibility=View.GONE
+        binding.llCart.visibility=View.GONE
         binding.tvNumberOfProductCount.text="0"
     }
 }

@@ -44,20 +44,24 @@ class BestSellerAdapter(val seeAllBtnClicked: (BestSeller) -> Unit) : RecyclerVi
     override fun onBindViewHolder(holder: BestSellerAdapterViewHolder, position: Int) {
         val productType = differ.currentList[position]
         holder.binding.apply {
-//            tvProduxtType.text=productType.productType
-            tvTotalProducts.text = productType.products?.size.toString() +" "+ "products"
+            tvTotalProducts.text = productType.products?.size.toString() + " products"
 
-            val listOfIv = listOf(ivProduct1,ivProduct2,ivProduct3)
+            val listOfIv = listOf(ivProduct1, ivProduct2, ivProduct3)
+            val totalProducts = productType.products?.size ?: 0
 
-            val minimumSize = minOf(listOfIv.size,productType.products?.size!!)
+            // Hide all image views and badge by default
+            listOfIv.forEach { it.visibility = View.GONE }
+            tvProductCount.visibility = View.GONE
 
-            for(i in 0 until minimumSize){
-                listOfIv[i].visibility= View.VISIBLE
-                Glide.with(holder.itemView).load(productType.products[i].productImagesUris?.get(0)).into(listOfIv[i])
+            // Show images as per product count
+            for (i in 0 until minOf(3, totalProducts)) {
+                listOfIv[i].visibility = View.VISIBLE
+                Glide.with(holder.itemView).load(productType.products!![i].productImagesUris?.getOrNull(0)).into(listOfIv[i])
             }
-            if(productType.products.size>3){
-                tvProductCount.visibility=View.VISIBLE
-                tvProductCount.text="+"+(productType.products?.size!!).toString()
+            // Show +N badge only if more than 3 products
+            if (totalProducts > 3) {
+                tvProductCount.visibility = View.VISIBLE
+                tvProductCount.text = "+${totalProducts - 3}"
             }
         }
 

@@ -205,7 +205,9 @@ class OrderPlacedActivity : AppCompatActivity() {
         try {
             PhonePe.getImplicitIntent(this, b2BPGRequest, "com.phonepe.simulator")
                 .let {
-                    phonePayView.launch(it)
+                    if (it != null) {
+                        phonePayView.launch(it)
+                    }
 
                     Log.d("PhonePe", "in Payment view")
                 }

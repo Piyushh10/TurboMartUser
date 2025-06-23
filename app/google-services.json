@@ -1,14 +1,33 @@
 {
   "project_info": {
-    "project_number": "468319673401",
-    "firebase_url": "https://turbomart-2a56c-default-rtdb.firebaseio.com",
-    "project_id": "turbomart-2a56c",
-    "storage_bucket": "turbomart-2a56c.firebasestorage.app"
+    "project_number": "157578327466",
+    "firebase_url": "https://turbomartadmin-default-rtdb.firebaseio.com",
+    "project_id": "turbomartadmin",
+    "storage_bucket": "turbomartadmin.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:468319673401:android:bbe80e7cc92dd3fb4881e8",
+        "mobilesdk_app_id": "1:157578327466:android:c77de79cfa5535ae4ba7d3",
+        "android_client_info": {
+          "package_name": "com.example.admindiyabatti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLPH9gtEaKc7fBU8ORXQBJ3pPtnrlvqCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157578327466:android:7348a0ceaa9b3a254ba7d3",
         "android_client_info": {
           "package_name": "com.example.blinkit"
         }
@@ -16,7 +35,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAXZL-gmR3q6Tc0M0-M3NbzlpKX-d2LkGI"
+          "current_key": "AIzaSyDLPH9gtEaKc7fBU8ORXQBJ3pPtnrlvqCI"
         }
       ],
       "services": {
