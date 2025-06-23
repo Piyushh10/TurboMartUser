@@ -36,7 +36,7 @@
                android:id="@+id/tvBlinkit"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Blink"
+               android:text="Turbo"
                android:gravity="end"
                android:layout_weight="1"
                android:textColor="@color/black"
@@ -47,7 +47,7 @@
                android:id="@+id/tvBlinkitit"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="it"
+               android:text="Mart"
                android:gravity="start"
                android:layout_weight="1"
                android:textColor="@color/green"
@@ -61,7 +61,7 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="India\'s Last minute app"
+           android:text=" Last minute grocery app"
            android:textSize="19.50sp"
            android:textStyle="bold"
            android:textColor="@color/black"/>
@@ -79,7 +79,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A young Startup "
+        android:text="By Piyush Shivnani "
         android:letterSpacing="0.1"
         android:textSize="10.40sp"
         android:textColor="@color/blue"

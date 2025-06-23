@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "829003070020",
-    "firebase_url": "https://blinkit-8f3bc-default-rtdb.firebaseio.com",
-    "project_id": "blinkit-8f3bc",
-    "storage_bucket": "blinkit-8f3bc.appspot.com"
+    "project_number": "468319673401",
+    "firebase_url": "https://turbomart-2a56c-default-rtdb.firebaseio.com",
+    "project_id": "turbomart-2a56c",
+    "storage_bucket": "turbomart-2a56c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:829003070020:android:80697066c083dcc00a1a11",
+        "mobilesdk_app_id": "1:468319673401:android:bbe80e7cc92dd3fb4881e8",
         "android_client_info": {
           "package_name": "com.example.blinkit"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDSBWu8liv3jeFF1t2jawqD1W1i0gi2c-0"
+          "current_key": "AIzaSyAXZL-gmR3q6Tc0M0-M3NbzlpKX-d2LkGI"
         }
       ],
       "services": {
