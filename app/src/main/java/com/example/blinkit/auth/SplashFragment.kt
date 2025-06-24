@@ -44,10 +44,8 @@ class SplashFragment : Fragment() {
                 viewModel.isACurrentUser.collect {
                     if (it) {
                         startActivity(Intent(requireActivity(), UsersMainActivity::class.java))
-                        requireActivity().finish()
                     } else {
                         findNavController().navigate(R.id.action_splashFragment_to_signInFragment)
-
                     }
                 }
             }

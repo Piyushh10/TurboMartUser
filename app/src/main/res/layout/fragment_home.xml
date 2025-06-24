@@ -53,17 +53,35 @@
                     <TextView
                         android:id="@+id/searchEt"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:background="@android:color/transparent"
                         android:drawablePadding="10dp"
                         android:hint="Search"
-                        android:padding="10dp"
+                        android:padding="0dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
                         android:textColorHint="@color/black"
                         android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
                         app:drawableStartCompat="@drawable/search" />
 
                 </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to TurboMart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="@android:color/transparent" />
 
             </LinearLayout>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
