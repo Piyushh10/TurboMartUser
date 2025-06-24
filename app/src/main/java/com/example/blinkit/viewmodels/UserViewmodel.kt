@@ -161,7 +161,7 @@ class UserViewmodel(application: Application) : AndroidViewModel(application) {
         val eventListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val order = snapshot.getValue(Orders::class.java)
-                trySend(order?.orderList!!)
+                trySend(order?.orderList ?: emptyList())
             }
 
             override fun onCancelled(error: DatabaseError) {

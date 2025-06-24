@@ -80,8 +80,8 @@ class OrdersFragment : Fragment() {
 
     fun onOrderItemViewClicked(orderItems: OrderItems) {
         val bundle = Bundle()
-        bundle.putInt("status", orderItems.itemStatus!!.toInt())
-        bundle.putString("orderId", orderItems.orderId)
+        bundle.putInt("status", orderItems.itemStatus ?: 0)
+        bundle.putString("orderId", orderItems.orderId ?: "")
 
         findNavController().navigate(R.id.action_ordersFragment_to_orderDetailFragment, bundle)
 
