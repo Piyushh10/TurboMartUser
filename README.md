@@ -11,7 +11,7 @@
 - **Search & Filter**: Quickly find products with advanced search and category filters.
 - **Cart Management**: Add, update, or remove products from your cart with real-time price calculation.
 - **Order Placement**: Place orders with address management and order summary.
-- **Digital Payments**: Integrated with Razorpay and PhonePe for secure UPI and card payments.
+- **Digital Payments**: Integrated with Razorpay.
 - **Order Tracking**: View your order history and track current orders.
 - **Push Notifications**: Get real-time updates on order status and promotions.
 - **Persistent Storage**: Cart and user data are stored locally using Room DB and synced with Firebase.
@@ -25,7 +25,7 @@
 - **Firebase** (Authentication, Realtime Database, Cloud Messaging)
 - **Room Database** for local persistence
 - **Retrofit** for API calls
-- **Razorpay** & **PhonePe** SDKs for payments
+- **Razorpay** for payments
 - **Lottie** for animations, **Glide** for image loading
 - **Material Components** for UI
 
@@ -40,7 +40,7 @@
 5. **Product Details**: View product info, add to cart, adjust quantity.
 6. **Cart**: Review selected items, update quantities, proceed to checkout.
 7. **Address**: Enter or select delivery address.
-8. **Payment**: Pay securely via Razorpay or PhonePe.
+8. **Payment**: Pay securely via Razorpay.
 9. **Order Confirmation**: View order summary and track status.
 10. **Profile**: Manage address, view order history, and log out.
 
@@ -49,7 +49,6 @@
 ## 💳 Payment Integration
 
 - **Razorpay**: For card, UPI, and wallet payments.
-- **PhonePe**: UPI payments via PhonePe Intent SDK.
 - **Order status** is updated in real-time after payment confirmation.
 
 ---
@@ -70,51 +69,17 @@
 
 ---
 
-## 🛠️ Setup & Installation
-
-1. **Clone the repository**  
-   ```bash
-   git clone <your-repo-url>
-   ```
-
-2. **Open in Android Studio**  
-   - Sync Gradle and let dependencies install.
-
-3. **Firebase Setup**  
-   - Add your `google-services.json` to `app/`.
-
-4. **Razorpay & PhonePe**  
-   - Register and obtain API keys.
-   - Replace test keys in the code with your production keys.
-
-5. **Run the app**  
-   - Build and deploy on an Android device (minSdk 26+).
-
----
-
 ## 📸 Screenshots
 
 > _Add screenshots of Home, Product, Cart, Payment, and Order Tracking screens here for maximum impact!_
 
 ---
 
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-This project is for educational/demo purposes. For commercial use, please contact the author.
-
----
-
 ## 🙌 Credits
 
 - Inspired by Blinkit, Zepto, and other quick-commerce apps.
-- Built with ❤️ using open-source libraries and APIs.
+- Built with ❤️ 
 
 ---
 
-**TurboMart** – _Your last-minute grocery solution!_ 
+**Contact me -** – _[shivnanip815@gmail.com]_ 
