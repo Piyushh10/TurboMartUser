@@ -73,19 +73,19 @@
 
 <div align="center">
 
-<img src="screenshots/tm1.jpg" alt="Screenshot 1" width="250" />
-<img src="screenshots/tm2.jpg" alt="Screenshot 2" width="250" />
-<img src="screenshots/tm3.jpg" alt="Screenshot 3" width="250" />
+<img src="screenshots/tm8.jpg" alt="Screenshot 1" width="250" />
+<img src="screenshots/tm9.jpg" alt="Screenshot 2" width="250" />
+<img src="screenshots/tm4.jpg" alt="Screenshot 3" width="250" />
 <br/>
-<img src="screenshots/tm4.jpg" alt="Screenshot 4" width="250" />
+<img src="screenshots/tm7.jpg" alt="Screenshot 4" width="250" />
 <img src="screenshots/tm5.jpg" alt="Screenshot 5" width="250" />
-<img src="screenshots/tm6.jpg" alt="Screenshot 6" width="250" />
+<img src="screenshots/tm10.jpg" alt="Screenshot 6" width="250" />
 <br/>
-<img src="screenshots/tm7.jpg" alt="Screenshot 7" width="250" />
-<img src="screenshots/tm8.jpg" alt="Screenshot 8" width="250" />
-<img src="screenshots/tm9.jpg" alt="Screenshot 9" width="250" />
+<img src="screenshots/tm3.jpg" alt="Screenshot 7" width="250" />
+<img src="screenshots/tm1.jpg" alt="Screenshot 8" width="250" />
+<img src="screenshots/tm6.jpg" alt="Screenshot 9" width="250" />
 <br/>
-<img src="screenshots/tm10.jpg" alt="Screenshot 10" width="250" />
+<img src="screenshots/tm2.jpg" alt="Screenshot 10" width="250" />
 
 </div>
 
