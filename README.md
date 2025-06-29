@@ -4,6 +4,10 @@
 
 ---
 
+## Demo video
+[![Demo](https://img.youtube.com/vi/-Cvvxf7GKgE/mqdefault.jpg)](https://youtu.be/LZ-4i0Wlfh0)
+
+
 ## 🚀 Features
 
 - **User Authentication**: Secure OTP-based phone number login.
