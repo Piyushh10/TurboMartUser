@@ -78,6 +78,10 @@ class OrderPlacedActivity : AppCompatActivity(), PaymentResultListener {
                 Toast.makeText(this, "Cart is empty or invalid amount", Toast.LENGTH_LONG).show()
                 return@observe
             }
+            // Add delivery charge if total is below 200
+            if (totalPrice < 200) {
+                totalPrice += 40
+            }
             val checkout = Checkout()
             checkout.setKeyID("rzp_test_rg8RnYvnkJmjB5") // TODO: Replace with your Razorpay key
             try {
