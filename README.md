@@ -4,9 +4,15 @@
 
 ---
 
-## Demo video
+
+## 🎥 Demo 
+
 [![Demo](https://img.youtube.com/vi/-Cvvxf7GKgE/mqdefault.jpg)](https://youtu.be/LZ-4i0Wlfh0)
 
+
+_Click the image above to watch the 5-minute demo_
+
+---
 
 ## 🚀 Features
 
